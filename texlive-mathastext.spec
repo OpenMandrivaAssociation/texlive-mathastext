@@ -1,12 +1,12 @@
-# revision 21967
+# revision 28077
 # category Package
 # catalog-ctan /macros/latex/contrib/mathastext
-# catalog-date 2011-04-04 21:27:21 +0200
+# catalog-date 2012-10-25 20:05:22 +0200
 # catalog-license lppl1.3
-# catalog-version 1.14c
+# catalog-version 1.15g
 Name:		texlive-mathastext
-Version:	1.14c
-Release:	2
+Version:	1.15g
+Release:	1
 Summary:	Use the text font in simple mathematics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mathastext
@@ -20,16 +20,16 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The mathastext package propagates the document text font to
-mathematical mode, for the letters of the Latin alphabet and,
-optionally, other characters in the font. Thus it makes
-possible (for a document with simple mathematics) to use a
-quite arbitrary text font without worrying too much that no
-specially designed accompanying maths fonts are available. The
-package also offers a simple mechanism for using many different
-choices of (text hence, now, math) font in the same document.
-Of course, using one font for two purposes helps produce
-smaller PDF files.
+The package uses a text font (usually the document's text font)
+for the letters of the Latin alphabet needed when typesetting
+mathematics. (Optionally, other characters in the font may also
+be used). This facility makes possible (for a document with
+simple mathematics) a far wider choice of text font, with
+little worry that no specially designed accompanying maths
+fonts are available. The package also offers a simple mechanism
+for using many different choices of (text hence, now, maths)
+font in the same document. Of course, using one font for two
+purposes helps produce smaller PDF files.
 
 %post
     %{_sbindir}/texlive.post
