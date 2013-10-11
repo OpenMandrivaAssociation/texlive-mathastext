@@ -1,13 +1,13 @@
-# revision 21967
+# revision 31587
 # category Package
 # catalog-ctan /macros/latex/contrib/mathastext
-# catalog-date 2011-04-04 21:27:21 +0200
+# catalog-date 2013-09-06 17:16:22 +0200
 # catalog-license lppl1.3
-# catalog-version 1.14c
+# catalog-version 1.3a
 Name:		texlive-mathastext
-Version:	1.14c
-Release:	2
-Summary:	Use the text font in simple mathematics
+Version:	1.30a
+Release:	1
+Summary:	Use the text font in maths mode
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mathastext
 License:	LPPL1.3
@@ -20,16 +20,18 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The mathastext package propagates the document text font to
-mathematical mode, for the letters of the Latin alphabet and,
-optionally, other characters in the font. Thus it makes
-possible (for a document with simple mathematics) to use a
-quite arbitrary text font without worrying too much that no
-specially designed accompanying maths fonts are available. The
-package also offers a simple mechanism for using many different
-choices of (text hence, now, math) font in the same document.
-Of course, using one font for two purposes helps produce
-smaller PDF files.
+The package uses a text font (usually the document's text font)
+for the letters of the Latin alphabet needed when typesetting
+mathematics. (Optionally, other characters in the font may also
+be used). This facility makes possible (for a document with
+simple mathematics) a far wider choice of text font, with
+little worry that no specially designed accompanying maths
+fonts are available. The package also offers a simple mechanism
+for using many different choices of (text hence, now, maths)
+font in the same document. Of course, using one font for two
+purposes helps produce smaller PDF files. The package, running
+under LuaTeX, requires the TeX live 2013 distribution (or
+later).
 
 %post
     %{_sbindir}/texlive.post
@@ -44,6 +46,10 @@ smaller PDF files.
 %{_texmfdistdir}/tex/latex/mathastext/mathastext.sty
 %doc %{_texmfdistdir}/doc/latex/mathastext/README
 %doc %{_texmfdistdir}/doc/latex/mathastext/mathastext.pdf
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestalphabets.tex
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestlinux.tex
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestmacos.tex
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestmathversions.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/mathastext/mathastext.dtx
 %doc %{_texmfdistdir}/source/latex/mathastext/mathastext.ins
@@ -57,17 +63,3 @@ smaller PDF files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.14c-2
-+ Revision: 753772
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.14c-1
-+ Revision: 718967
-- texlive-mathastext
-- texlive-mathastext
-- texlive-mathastext
-- texlive-mathastext
-
