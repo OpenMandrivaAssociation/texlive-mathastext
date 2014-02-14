@@ -1,12 +1,12 @@
-# revision 31587
+# revision 32415
 # category Package
 # catalog-ctan /macros/latex/contrib/mathastext
-# catalog-date 2013-09-06 17:16:22 +0200
+# catalog-date 2013-12-14 19:05:26 +0100
 # catalog-license lppl1.3
-# catalog-version 1.3a
+# catalog-version 1.3c
 Name:		texlive-mathastext
-Version:	1.30a
-Release:	5
+Version:	1.30c
+Release:	1
 Summary:	Use the text font in maths mode
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mathastext
@@ -46,10 +46,12 @@ later).
 %{_texmfdistdir}/tex/latex/mathastext/mathastext.sty
 %doc %{_texmfdistdir}/doc/latex/mathastext/README
 %doc %{_texmfdistdir}/doc/latex/mathastext/mathastext.pdf
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastext.tex
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestalphabets.pdf
 %doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestalphabets.tex
-%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestlinux.tex
-%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestmacos.tex
 %doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestmathversions.tex
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestunicodelinux.tex
+%doc %{_texmfdistdir}/doc/latex/mathastext/mathastexttestunicodemacos.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/mathastext/mathastext.dtx
 %doc %{_texmfdistdir}/source/latex/mathastext/mathastext.ins
