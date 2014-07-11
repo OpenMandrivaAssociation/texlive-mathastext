@@ -6,7 +6,7 @@
 # catalog-version 1.3c
 Name:		texlive-mathastext
 Version:	1.30c
-Release:	2
+Release:	3
 Summary:	Use the text font in maths mode
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mathastext
