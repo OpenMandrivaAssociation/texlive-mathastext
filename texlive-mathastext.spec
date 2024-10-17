@@ -3,7 +3,7 @@ Version:	71913
 Release:	1
 Summary:	Use the text font in maths mode
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mathastext
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mathastext
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathastext.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathastext.doc.r%{version}.tar.xz
