@@ -1,5 +1,5 @@
 Name:		texlive-mathastext
-Version:	71913
+Version:	72671
 Release:	1
 Summary:	Use the text font in maths mode
 Group:		Publishing
